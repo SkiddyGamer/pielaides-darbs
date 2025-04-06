@@ -1,0 +1,129 @@
+.booking-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: flex-start;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.booking-card {
+	width: 300px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+.booking-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.booking-card.selected {
+	border: 3px solid #4caf50;
+	box-shadow: 0px 6px 12px rgba(76, 175, 80, 0.5);
+}
+
+.booking-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.booking-card h3 {
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+.booking-card p {
+	margin: 5px 0;
+	color: #555;
+}
+
+.btn-edit {
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 25px;
+	background-color: #5c7f4a;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-edit:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-bookers {
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 25px;
+	background-color: #5c7f4a;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-delete {
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 25px;
+	background-color: #a12c68;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-delete:hover {
+	background-color: #a12c68;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-bookers:hover,
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success-message {
+	color: #5c7f4a;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #e8f5e9;
+	border-radius: 5px;
+}
+
+.error-message {
+	color: #a12c68;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #ffebee;
+	border-radius: 5px;
+}
+
+.card-actions {
+	margin-top: 10px;
+}
